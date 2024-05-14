@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+#head{
+    text-align: center;
+    background-color: black;
+    color: white;
+    animation-name: moulik;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes moulik{
+    0%{
+      color: rgb(248, 96, 121);
+    }
+ 
+    50%{
+        color:yellow;
+        
+    }
+    100%{
+        color: aqua;
+        
+    }
+    
+}
+.box{
+    height:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+.box img{
+    mix-blend-mode: multiply;
+    width:150px;
+    border-radius:50%;
+    
+}
+.box img:hover{
+   box-shadow: 1px 5px 10px;
+}
+.score{
+    height:100px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap:70px;
+    top:-50px;
+}
+.you{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.comp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button{
+margin-left: 590px;
+height:40px;
+position: relative;
+bottom: 20px;
+width: auto;
+background-color: black;
+color: white;
+border-radius: 5px;
+    
+}
+@media (max-width:550px) {
+  .box img{
+    width:100px;
+  }
+  button{
+    right:450px;
+    width:100px;
+  }
+  }
+@media(max-width:380px){
+
+    .box{
+        position: relative;
+        left: 50px;
+    }
+    button{
+        right:450px;
+        width:100px;
+    }
+    #head{
+        margin-left: 90px;
+        font-size: 20px;
+    }
+   
+
+}
+@media(max-width:280px){
+    .box{
+        position: relative;
+        left:80px;
+    }
+    #head{
+        font-size: 19.5px;
+    }
+}
